@@ -1,2 +1,2 @@
-# analiza-medicinske-slike
-AI in Medical Image Analysis
+# Analiza Medicinske Slike
+AI in Medical Image Analysis 
