@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Nastavni materijali iz predmeta Analiza Medicinske Slike i Kompjuterska Vizija u Medicini.">
+  <meta name="keywords" content="MAS, MAS2024/25">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analiza Medicinske Slike</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://nebojsa-bozanic.github.io/analiza-medicinske-slike/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Ostali predmeti
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/nebojsa-bozanic/BMI_OSuM">
+            Obrada Slike u Medicini
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Analiza Slike u Medicini</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://visaris.com/vladimir-petrovic/">Dr Vladimir Petrovic</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://rs.linkedin.com/in/nebojsa-bozanic">Dr Nebojsa Bozanic</a><sup>1</sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Univerzitet u Novom Sadu,</span>
+            <!-- <span class="author-block"><sup>2</sup>Visaris</span>
+            <span class="author-block"><sup>2</sup>Aneural</span> -->
+          </div>
+
+          <div class="column has-text-centered">
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/nebojsa-bozanic/analiza-medicinske-slike"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/nebojsa-bozanic/analiza-medicinske-slike"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Opis kursa</h2>
+        <div class="content has-text-justified">
+          <p>
+            Na ovom predmetu ćemo pružiti detaljan uvid u savremene tehnike veštačke inteligencije (VI) i njihovu primenu u analizi medicinskih slika. Studenti će naučiti o najnovijim metodama VI, uključujući duboko učenje i algoritme mašinskog učenja, i kako one transformišu oblast medicinske dijagnostike. Kurs obuhvata različite modalitete slikanja, kao što su magnetna rezonanca (MRI), kompjuterizovana tomografija (CT) i rendgen, sa fokusom na segmentaciju, klasifikaciju, detekciju i rekonstrukciju slika koriscenjem Gen AI.
+          </p>
+          <p>
+            Kroz praktične projekte, studenti će implementirati modele VI za rešavanje stvarnih problema u radiologiji, patologiji i drugim medicinskim oblastima. Teme uključuju konvolucione neuronske mreže (CNN), predobradu slika, transferno učenje i objašnjivost VI. Studenti će takođe istražiti izazove specifične za medicinsku oblast, uključujući nedostatak podataka i potrebu za visokom tačnošću i pouzdanošću u kliničkom okruženju.
+          </p>
+            Na kraju kursa, studenti će imati veštine da razvijaju, treniraju i evaluiraju modele VI za analizu medicinskih slika, stičući uvid u tehnički i klinički uticaj VI na oblast zdravstva.
+          <p>
+          </p>
+            Ciljevi:<br>
+            <br>
+            Razlikovanje različitih modaliteta i projekcija medicinske slike<br>
+            Razumevanje osnova dubokog učenja<br>
+            Razumevanje uloge VI u analizi medicinskih slika<br>
+            Primena najnaprednijih tehnika za segmentaciju, klasifikaciju i detekciju slika<br>
+            Razvijanje modela koristeći Pytorch biblioteku za duboko učenje<br>
+            Analiziranje i interpretacija rezultata medicinske dijagnostike vođene VI<br>
+          </p>
+          <p>
+            Format kursa:<br>
+            <br>
+            Predavanja i diskusije<br>
+            Praktične vežbe<br>
+            Projekti na kojima će studenti dobijati konkretne probleme iz domena analize medicinske slike, koje ce rešavati na realnim medicinskim snimcima<br>
+          </p>
+          <p>  
+            <!-- Na ovom predmetu ćemo se baviti primenom savremenih metoda analize medicinskih slika. Cilj je da se studenti upoznaju sa osnovnim pravcima razvoja mašinskog vida (kompjuterske vizije) u medicini i steknu iskustvo rešavajuci konkretne probleme iz analize medicinskih slika. Početna predavanja će pokriti osnovne pojmove medicinske slike kao i neke od najmoćnijih alata u analizi slike: Dubokih neuronskih mreža. Predavanja će pokriti savremene modele vizije, segmentacije, baratanje baza podataka kao stvaranje medicinskih slika koriscenjem Gen AI.
+            Tokom vežbi i projekata studenti ce dobijati konkretne probleme iz domena analize medicinske slike, koje ce rešavati na realnim medicinskim snimcima. -->
+<!-- Healthcare is one of the most exciting application domains of artificial intelligence, with transformative potential in areas ranging from medical image analysis to electronic health records-based prediction and precision medicine. This course will involve a deep dive into recent advances in AI in healthcare, focusing in particular on deep learning approaches for healthcare problems. We will start from foundations of neural networks, and then study cutting-edge deep learning models in the context of a variety of healthcare data including image, text, multimodal and time-series data. In the latter part of the course, we will cover advanced topics on open challenges of integrating AI in a societal application such as healthcare, including interpretability, robustness, privacy and fairness. The course aims to provide students from diverse backgrounds with both conceptual understanding and practical grounding of cutting-edge research on AI in healthcare. -->
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns">
+    
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Kontakt</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            vladimir.petrovic@uns.ac.rs
+          </p>
+          <p>
+            bozanic@uns.ac.rs
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns">
+    
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Vreme i lokacija nastave i vežbi</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            Nastava: Petkom, 17:45 - 19:30; Laboratorija 116L
+          </p>
+          <p>
+            Vežbe: Sredom, 14:30 - 16:00; Laboratorija 115L
+          </p>
+          <p>
+            <a href="https://maps.app.goo.gl/kiQfg1S9PM545QH5A">NTP (FTN Ulaz)</a>, Prvi Sprat.
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns">
+    
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Preduslovi</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            Osnovno znanje iz mašinskog učenja i dubokog učenja.
+          </p>
+          <p>
+            Osnovne veštine programiranja u programskom jeziku Python.
+          </p>
+          <p>
+            Poznavanje medicinskih slika je korisno, ali nije neophodno.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns">
+    
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Nastavni plan i program</h2>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+<div class="bg-no-highlight">
+  <div class="container is-max-desktop">
+    <div class="section">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row" style="margin-top:20px;">
+            <div class="col-md-12">
+              <table class="table" id="schedule" style="margin: 20px auto;">
+                <tr class="schedule-header">
+                  <th></th><th>Tema</th><th>Materijali</th>
+<!--                       <th>Suggested Readings</th><th>Notes</th> -->
+
+                </tr>
+                <tr class="schedule-row">
+                  <td class="event-cell">Predavanja 1</td>
+                  <td class="topic-cell">Uvod u predmet</td>
+                  <td class="lecture-slides-cell"><a target="_blank" href="predavanja/predavanje1.pdf">predavanje1.pdf</a></td>
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row">
+                  <td class="event-cell">Vežbe 1</td>
+                  <td class="topic-cell">Uvod u Colab Google Colab</td>
+                  <td class="lecture-slides-cell"><a target="_blank" href="vezbe/Intro to Colab.ipynb">Intro to Colab.ipynb</a></td>
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row">
+                  <td class="event-cell">Predavanja 2</td>
+                  <td class="topic-cell">Uvod u neuronske mreže</td>
+                  <td class="lecture-slides-cell"><a target="_blank" href="predavanja/predavanje2.pdf">predavanje2.pdf</a></td>
+                  <td class="lecture-slides-cell"></td>
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row">
+                  <td class="event-cell">Vežbe 2</td>
+                  <td class="topic-cell">Uvod u pytorch</td>
+                  <td class="lecture-slides-cell"><a target="_blank" href="vezbe/Intro to Pytorch.ipynb">Intro to Pytorch.ipynb</a></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row">
+                  <td class="event-cell">Predavanje 3</td>
+                  <td class="topic-cell">Klasifikacija medicinskih slika</td>
+                  <td class="lecture-slides-cell"><a target="_blank" href="predavanja/predavanje3.pdf">predavanje3.pdf</a></td>
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row">
+                  <td class="event-cell">Vežbe 3</td>
+                  <td class="topic-cell">Napredno korišćenje Pytorch</td>
+                   <td class="lecture-slides-cell"><a target="_blank" href="vezbe/Advanced Pytorch.ipynb">Advanced Pytorch.ipynb</a></td>
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row section-row" style="background-color: #ffeeba;">
+                  <td class="event-cell">Test</td>
+                  <td class="topic-cell">Prvi Ispitni Test</td>
+                  <td class="lecture-slides-cell"></td>
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row">
+                  <td class="event-cell">Predavanje 4</td>
+                  <td class="topic-cell">Analiza Medicinske slike: Noviji modeli vizije</td>
+                  <td class="lecture-slides-cell"><a target="_blank" href="predavanja/predavanje4.pdf">predavanje4.pdf</a></td> 
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row">
+                  <td class="event-cell">Vežbe 4</td>
+                  <td class="topic-cell">MLP1: Gradients i backpropagation</td>
+                  <td class="lecture-slides-cell"></td>
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row">
+                  <td class="event-cell">Predavanja 5</td>
+                  <td class="topic-cell">Transformeri</td>
+                  <td class="lecture-slides-cell"><a target="_blank" href="predavanja/predavanje5.pdf">predavanje5.pdf</a></td> 
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row">
+                  <td class="event-cell">Vežbe 5</td>
+                  <td class="topic-cell">MLP2: Trening, Overfitting, Sanity test</td>
+                  <td class="lecture-slides-cell"></td>
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row" style="background-color: #D5F0FF;">
+                  <td class="event-cell">Sesija</td>
+                  <td class="topic-cell">Izbor projekata</td>
+                  <td class="lecture-slides-cell"><a target="_blank" href="projekti/projekti2024.pdf">projekti2024.pdf</a></td>
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+              </tr>
+              <tr class="schedule-row">
+                  <td class="event-cell">Vežbe 6</td>
+                  <td class="topic-cell">Evaluacija modela</td>
+                  <td class="lecture-slides-cell"></td>
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row section-row" style="background-color: #ffeeba;">
+                  <td class="event-cell">Test</td>
+                  <td class="topic-cell">Drugi Ispitni Test</td>
+                  <td class="lecture-slides-cell"></td>
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row">
+                  <td class="event-cell">Vežbe 7</td>
+                  <td class="topic-cell">Traženje adekvatnih modela</td>
+                  <td class="lecture-slides-cell"></td>
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+                <tr class="schedule-row">
+                  <td class="event-cell">Vežbe 8</td>
+                  <td class="topic-cell">Priprema za projekte i napredne teme</td>
+                  <td class="lecture-slides-cell"></td>
+                  <td class="suggested-readings-cell"></td>
+                  <td class="notes-cell"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+    
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Literatura</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            Postoji dosta kvalitetne literature koje želimo da preporučimo, ali ćemo odabrati samo nekoliko.
+          </p>
+          <p>
+            Kurs Stanford Univerziteta: Veštačka Inteligencija u Zdravstvu | <a href="https://biods220.stanford.edu/index.html">
+              Artificial Intelligence in Healthcare - BIODS220 (CS271, BIOMEDIN220)</a> koja u prvom delu kursa pokriva osnove veštačke inteligencije i medicinsku sliku.
+          </p>
+          <p>
+            Kurs Andreja Karpatija | <a href="https://karpathy.ai/zero-to-hero.html"> Andrej Karpathy: Neural Networks: Zero to Hero</a>; Ovaj kurs ćemo koristiti za vežbe gde ćemo videti kako se računaju gradijenti i bekpropagacija.
+          </p>
+          <p>
+            Za osnove korišćenja Google Colab, kao i Uvod i naprednije korišćenje Pytorch koristićemo <a href="https://github.com/eemlcommunity/PracticalSessions2024-dev/tree/master/0_intro">materijale</a> sa letnje škole EEML2024 koju je organizovao Google Deepmind.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Šablon za vebsajt je preuzet sa licencom Autorstvo-Nekomercijalno-Deliti pod istim uslovima 4.0 | This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Izvorni kod za vebsajt se nalazi <a href="https://github.com/nerfies/nerfies.github.io">ovde</a> | Source code of the website can be found <a
+              href="https://github.com/nerfies/nerfies.github.io">here</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
